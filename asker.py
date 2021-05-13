@@ -1,19 +1,14 @@
-a=input("why is the sky blue?:")
-b=input("why?:")
-c=input("again:")
-d=input("tell again:")
-e=input("why?:")
-f=input("is it blue?:")
-g=input("why is it blue?:")
-h=input("is there any fact of it:")
-i=input("what is the meaning of the blue sky?:")
-j=print("Know I will ask you other quetion.")
-k=input("which dress did you wear:")
-l=input("did any one asked you to wear that dress?:")
-m=input("why:")
-n=input("which type of dress is that?:")
-o=input("who gave you that dress?:")
-p=input("why:")
-q=print("For what did you wear that dress?:")
-r=input("did you wear that for any function?:")
-print("ok bye:")
+from random import choice
+
+questions = ["Why is the sky blue?: ", "Why is there a face on the moon?: ",
+                     "Where are all the dinosaurs: "]
+
+question = choice(questions)
+answer = input(question).strip().lower()
+
+while answer != "I don't know":
+    answer = input("tell again?: ").strip().lower()
+
+input("Is it the right answer: ")
+
+input("Say bye to me: ")
